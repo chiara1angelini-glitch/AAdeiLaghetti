@@ -43,7 +43,7 @@ Cavalieri massimi per lezione: 4. Per cambiarlo modifica `maxPerSlot` in `config
 ## Metterla online con GitHub Pages
 
 1. Su github.com: **+ → New repository**, nome `laghetti`, **Public**, spunta *Add a README file* → **Create repository**.
-2. **Add file → Upload files** e trascina **il contenuto** di questa cartella (index.html, app.js, style.css, config.js, manifest.webmanifest, service-worker.js e la cartella icons) → **Commit changes**.
+2. **Add file → Upload files** e trascina **il contenuto** di questa cartella (index.html, app.js, style.css, config.js, manifest.webmanifest, service-worker.js e le immagini .png). Tutti i file stanno insieme, senza cartelle → **Commit changes**.
 3. **Settings → Pages** → Branch **main**, cartella **/(root)** → **Save**.
 4. Dopo 1–2 minuti: `https://NOME-UTENTE.github.io/laghetti/`
 

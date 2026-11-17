@@ -1,6 +1,6 @@
 // Permette all'app di aprirsi anche senza connessione.
 // Quando cambi qualcosa nell'app, aumenta il numero di versione qui sotto.
-const CACHE = 'laghetti-v2';
+const CACHE = 'laghetti-v4';
 const FILES = [
   './',
   './index.html',
@@ -8,10 +8,10 @@ const FILES = [
   './style.css',
   './config.js',
   './manifest.webmanifest',
-  './icons/logo.png',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/apple-touch-icon.png'
+  './logo.png',
+  './icon-192.png',
+  './icon-512.png',
+  './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', (e) => {
