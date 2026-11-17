@@ -1,6 +1,6 @@
 // Permette all'app di aprirsi anche senza connessione.
 // Quando cambi qualcosa nell'app, aumenta il numero di versione qui sotto.
-const CACHE = 'laghetti-v4';
+const CACHE = 'laghetti-v5';
 const FILES = [
   './',
   './index.html',
@@ -30,7 +30,7 @@ self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
   if (new URL(e.request.url).hostname.endsWith('supabase.co')) return; // dati sempre freschi
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: 'no-cache' }) // chiede sempre al sito se c'è una versione nuova
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
